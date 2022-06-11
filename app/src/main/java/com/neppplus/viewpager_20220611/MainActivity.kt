@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
 
         mainViewPager.adapter = mAdapter
 
+//        화면의 탭레이아웃을, 뷰페이저와 연결
+
+        mainTabLayout.setupWithViewPager( mainViewPager )
+
     }
 
 }
