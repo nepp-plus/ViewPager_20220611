@@ -24,4 +24,19 @@ class MainViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
             return AddressFragment()
         }
     }
+
+    override fun getPageTitle(position: Int): CharSequence? {
+
+        if ( position == 0 ) {
+            return "인사말"
+        }
+        else if (position == 1) {
+            return "이름"
+        }
+        else {
+            return "거주지"
+        }
+
+    }
+
 }
