@@ -8,10 +8,8 @@ import com.neppplus.viewpager_20220611.fragments.HelloFragment
 import com.neppplus.viewpager_20220611.fragments.NameFragment
 
 class MainViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
-    override fun getCount(): Int {
 
-        return 3
-    }
+    override fun getCount() = 3
 
     override fun getItem(position: Int): Fragment {
 
