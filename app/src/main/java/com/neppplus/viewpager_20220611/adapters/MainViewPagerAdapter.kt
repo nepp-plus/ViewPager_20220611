@@ -15,22 +15,20 @@ class MainViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
 
-        when (position) {
-
-            0 -> return HelloFragment()
-            1 -> return NameFragment()
-            else -> return AddressFragment()
-
+        return when(position) {
+            0 -> HelloFragment()
+            1 -> NameFragment()
+            else -> AddressFragment()
         }
 
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
 
-        when (position) {
-            0 -> return "인사말"
-            1 -> return "이름"
-            else -> return "거주지"
+        return when(position) {
+            0 -> "인사말"
+            1 -> "이름"
+            else -> "거주지"
         }
 
     }
